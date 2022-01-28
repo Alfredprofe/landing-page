@@ -1,0 +1,52 @@
+html
+    font-family: 'Dongle', sans-serif
+    font-size: 16px
+
+    .grid
+        background: #f0f0f0
+        display: grid
+        grid-template-areas: "header header header header" "box1 box1 box1 box1" "cards cards cards cards" "box2 box2 box2 box2" "contact contact about about" "footer footer footer footer"
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(6, auto)
+
+        .header
+            background: #03045e
+            border-radius: 1rem
+            grid-area: header
+            height: 20vh
+
+        .box1
+            background: #023e8a
+            border-radius: 1rem
+            grid-area: box1
+            height: 20vh
+
+        .cards
+            background: #0077b6
+            border-radius: 1rem
+            grid-area: cards
+            height: 20vh
+
+        .box2
+            background: #0096c7
+            border-radius: 1rem
+            grid-area: box2
+            height: 20vh
+
+        .contact
+            background: #00b4d8
+            border-radius: 1rem
+            grid-area: contact
+            height: 20vh
+
+        .about
+            background: #48cae4
+            border-radius: 1rem
+            grid-area: about
+            height: 20vh
+
+        .footer
+            background: #90e0ef
+            border-radius: 1rem
+            grid-area: footer
+            height: 20vh

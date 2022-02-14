@@ -1,5 +1,5 @@
 html {
-  font-family: "Dongle", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 16px;
 }
 html .grid {
@@ -9,11 +9,33 @@ html .grid {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
 }
-html .grid .header {
-  background: #03045e;
-  border-radius: 1rem;
+html .grid header {
+  align-content: center;
+  background: #272932;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   grid-area: header;
-  height: 20vh;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+html .grid header h1 {
+  border: 1px solid #12ab09;
+  color: #D6EBFF;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 2.5rem;
+}
+html .grid header p {
+  border: 1px solid #fa012b;
+  color: #D6EBFF;
+  padding: 0 10rem;
+  text-align: center;
+}
+html .grid header button {
+  background: #1CC8A0;
+  border-radius: 0.3rem;
+  padding: 1.125rem 2rem;
 }
 html .grid .box1 {
   background: #023e8a;
